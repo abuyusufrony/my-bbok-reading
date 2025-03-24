@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Book2 from '../Book/Book2';
 
+
 const Books = () => {
-    const [books, setBooks] = useState()
+    const [books, setBooks] = useState([])
     useEffect(() => {
         fetch('./booksData.json')
             .then(res => res.json())
@@ -25,3 +26,5 @@ const Books = () => {
 };
 
 export default Books;
+
+
