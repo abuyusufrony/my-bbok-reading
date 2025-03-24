@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { getInLocal, setWish } from '../../Utilities/SetDb';
 
 const BookDetail = () => {
 
@@ -12,7 +13,7 @@ const BookDetail = () => {
     console.log(typeof id, typeof data[0].bookId, typeof bookId)
     const matchbooks = data.find(d => d.bookId === id)
     console.log(matchbooks)
-    const { bookId: currentBookId, bookName, image: currentImage, author, category, review } = matchbooks
+    const { bookId: currentBookId, bookName, image: currentImage, author, category, review, tags } = matchbooks
 
 
 
@@ -31,7 +32,16 @@ const BookDetail = () => {
     // console.log("Type of id from URL:", typeof id);
     // console.log("ID from URL:", id);
 
+    // onclick Function are 
 
+    const markAsRead = (id) => {
+        getInLocal(id)
+
+    }
+    const handlewish = (id) => {
+        setWish(id)
+
+    }
 
 
 
@@ -62,9 +72,14 @@ const BookDetail = () => {
 
                             {review}
                         </p>
+                        <div className='flex  py-4   gap-3'>
+                            {
+                                tags.map((t, index) => <button key={index} className="btn btn-sm bg-green-200 text-[#23BE0A] rounded-2xl">  {t}</button>)
+                            }
+                        </div>
                         <div className='mr-2.5'>
-                            <button className="btn btn-primary mr-2.5 hover:bg-amber-800">Read</button>
-                            <button className="btn btn-primary">Wish listed</button>
+                            <button onClick={() => markAsRead(bookId)} className="btn btn-primary mr-2.5 hover:bg-amber-800"> Mark Read</button>
+                            <button onClick={() => handlewish(bookId)} className="btn btn-primary"> Add Wishlisted</button>
                         </div>
                     </div>
                 </div>
