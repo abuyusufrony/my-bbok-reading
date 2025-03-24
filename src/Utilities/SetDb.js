@@ -53,4 +53,4 @@ const setWish = (id) => {
 
 
 
-export { getInLocal, setWish }
+export { getInLocal, setWish, setInlocal, getWish }

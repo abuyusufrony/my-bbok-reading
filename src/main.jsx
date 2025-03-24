@@ -7,6 +7,7 @@ import Hook from './Components/Hook/Hook.jsx'
 import Home from './Components/Home/Home.jsx'
 import Dashborad from './Components/Dashbord/Dashborad.jsx'
 import BookDetail from './Components/BookDetail/BookDetail.jsx'
+import ListedBooks from './Components/ListedBooks/ListedBooks.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
 
         element: <BookDetail></BookDetail>,
         loader: () => fetch('/booksData.json')
+      },
+      {
+        path: 'listedBooks',
+        element: <ListedBooks></ListedBooks>,
+        loader: () => fetch('/booksData.json')
+
       },
       {
         path: 'dashbord',
