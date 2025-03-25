@@ -82,3 +82,11 @@ git clone https://github.com/yourusername/booknest.git
 cd booknest
 npm install
 npm run dev
+
+License
+MIT
+
+Contact
+abuyusufrony@gmail.com
+
+🔗 Site live Link:
