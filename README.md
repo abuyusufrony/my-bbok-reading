@@ -80,24 +80,8 @@ src/
 ## 📜 Contracts
 abuyusufrony@gmail.com
 
-### Smart Contracts (if applicable)
-```solidity
-// Sample BookStorage.sol
-pragma solidity ^0.8.0;
+##Live_link
 
-contract BookStorage {
-    struct Book {
-        uint id;
-        string name;
-        string author;
-    }
-    
-    Book[] public books;
-    
-    function addBook(string memory _name, string memory _author) public {
-        books.push(Book(books.length, _name, _author));
-    }
-}
 ## Installation
 ```bash
 git clone https://github.com/yourusername/booknest.git
