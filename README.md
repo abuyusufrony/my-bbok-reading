@@ -40,6 +40,20 @@ A responsive book management application built with React.js that allows users t
 - JSON data files
 
 ## 4. Project Structure
+src/
+├── Components/
+│ ├── Book/
+│ ├── BookDetail/
+│ ├── Books/
+│ ├── ListedBooks/
+│ ├── Layout/
+│ │ ├── Navbar/
+│ │ └── Footer/
+├── Utilities/
+│ └── SetDb.js
+├── App.jsx
+├── main.jsx
+└── booksData.json
 
 
 ## 5. Key Implementations
