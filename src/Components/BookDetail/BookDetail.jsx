@@ -52,9 +52,9 @@ const BookDetail = () => {
 
     return (
         <div>
-            <h2>Book details {bookId} </h2>
-            <p className='text-6xl  text-amber-300'> Work hard unstill sucess </p>
-            <p className='text-6xl mb-5  text-amber-300'>Stay focus Rony </p>
+            {/* <h2>Book details {bookId} </h2> */}
+            {/* <p className='text-6xl  text-amber-300'> Work hard unstill sucess </p>
+            <p className='text-6xl mb-5  text-amber-300'>Stay focus Rony </p> */}
 
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex-col lg:flex-row">

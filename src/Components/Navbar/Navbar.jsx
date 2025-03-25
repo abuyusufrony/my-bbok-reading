@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <NavLink >  </NavLink>
 
-        <li><a>Page to Read</a></li>
+
     </>
 
     return (
@@ -31,7 +31,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Reading Book</a>
+                <a className="btn btn-ghost text-3xl font-bold ">Reading Book</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -39,8 +39,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn ">Sing up</a>
-                <a className="btn">Sing in</a>
+                <a className="btn bg-[#23BE0A] text-amber-50 mr-2.5   ">Sing up</a>
+                <a className="btn bg-[#59C6D2] text-amber-50">Sing in</a>
             </div>
         </div>
     );
