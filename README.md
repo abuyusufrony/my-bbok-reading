@@ -80,7 +80,14 @@ src/
 ## 📜 Contracts
 abuyusufrony@gmail.com
 
-##Live_link
+## 🚀 Live Demo  
+
+Check out the live version of this project:  
+
+[![Live Site](https://img.shields.io/badge/Live%20Demo-Netlify-blue?style=for-the-badge)](https://unrivaled-lamington-dafe4d.netlify.app)
+
+🔗 **[Click here to view the site](https://unrivaled-lamington-dafe4d.netlify.app)**  
+
 
 ## Installation
 ```bash
